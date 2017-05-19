@@ -5,14 +5,15 @@ include $(TOPDIR)/rules.mk
 
 # Name and release number of this package
 PKG_NAME:=nodejs5
-PKG_VERSION:=5.6.0
+PKG_VERSION:=5.12.0
 PKG_RELEASE:=1
 
 NODE_MAJOR_VER:=$(shell echo $(PKG_VERSION) | cut -f1 -d.)
 
 PKG_SOURCE:=node-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://nodejs.org/dist/v$(PKG_VERSION)/
-PKG_MD5SUM:=6f7c2cec289a20bcd970240dd63c1395
+#PKG_MD5SUM:=6f7c2cec289a20bcd970240dd63c1395
+PKG_HASH:=250c12a561d7319e71e142ee92ab682494c7823d81ce24703c80eb52bdf9ba42
 PKG_MAINTAINER:="Andy Savage <andy@savage.hk>"
 
 PKG_INSTALL:=0
